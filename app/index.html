@@ -28,34 +28,39 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
-      <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">
-          <img src="images/logo.png"/>
-        </span>
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href=""><span class="bold">SIGN IN</span></a>
-          <a class="mdl-navigation__link" href="">FEATURES</a>
-          <a class="mdl-navigation__link" href="">REVIEW</a>
-        </nav>
-      </div>
-      <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="demo-layout-waterfall demo-layout-transparent mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--waterfall" id="header">
+        <!-- Header top row -->
         <div class="mdl-layout__header-row">
           <!-- Title -->
           <span class="mdl-layout-title">
-            <img src="images/logo.png">
+            <img src="images/logo_header.png"/>
           </span>
-          <!-- Add spacer, to align navigation to the right -->
           <div class="mdl-layout-spacer"></div>
+          <!-- Hidden, show on scroll -->
+          <span class="show-on-scroll">
+            <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="">FEATURES</a>
+              <a class="mdl-navigation__link" href="">REVIEW</a>
+              <a class="mdl-navigation__link" href="">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary mdl-js-ripple-effect sign-in-button">
+                  SIGN IN
+                </button>
+              </a>
+            </nav>
+          </span>
+        </div>
+        <!-- Header bottom row -->
+        <div class="mdl-layout__header-row hide-on-scroll">
           <!-- Navigation -->
           <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="">FEATURES</a>
             <a class="mdl-navigation__link" href="">REVIEW</a>
             <a class="mdl-navigation__link" href="">
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="sign-in-button">
-              SIGN IN
-            </button>
-          </a>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary mdl-js-ripple-effect sign-in-button">
+                SIGN IN
+              </button>
+            </a>
           </nav>
         </div>
       </header>
@@ -148,7 +153,7 @@
         <footer class="mdl-mini-footer">
           <div class="mdl-mini-footer__left-section">
             <div class="mdl-logo">
-              <img src="images/logo.png"/>
+              <img src="images/logo_footer.png"/>
             </div>
             <ul class="mdl-mini-footer__link-list">
               <li><a href="">Blog</a></li>

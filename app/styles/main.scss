@@ -17,12 +17,24 @@ body {
   color: white;
 }
 
-#sign-in-button {
+/* Header */
+#header {
+  width: 80%;
+  margin: auto;
+  border-bottom: #fff solid 1px;
+}
+
+.sign-in-button {
   color: white;
 }
 
 .demo-layout-transparent {
   background: url('/images/bg.jpg') center / cover;
+}
+
+/* Main slide show */
+#main-slide {
+  margin: 70px 0;
 }
 
 .slick-slide {

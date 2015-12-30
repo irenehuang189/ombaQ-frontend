@@ -1,4 +1,18 @@
 $(document).ready(function() {
+  // Header minimize on scroll
+  $('.show-on-scroll').hide();
+  $(window).scroll(function() {
+    if ($(this).scrollTop()<0) {
+      console.log('down');
+      $('.show-on-scroll').fadeOut();
+    } else {
+      console.log('up');
+      $('.show-on-scroll').fadeIn();
+    }
+  });
+
+
+  // Main slide show
   $('#main-slide').slick({
     infinite: true,
     speed: 500,
