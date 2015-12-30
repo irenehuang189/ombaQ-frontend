@@ -1,0 +1,91 @@
+// bower:scss
+// endbower
+
+$blue-color: #0091ea;
+
+body {
+  background: #fafafa;
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+       url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+       url(https://example.com/MaterialIcons-Regular.ttf) format('truetype'); 
+  color: white;
+}
+
+#sign-in-button {
+  color: white;
+}
+
+.demo-layout-transparent {
+  background: url('/images/bg.jpg') center / cover;
+}
+
+.slick-slide {
+  text-align: center;
+}
+
+.slick-prev:before {
+  position: absolute;
+  left: 100px;
+}
+
+.slick-next:before {
+  position: absolute;
+  right: 100px;
+}
+
+#title {
+  padding-top: 100px;
+}
+
+/* Features */
+#features {
+  padding: 30px;
+  color: $blue-color;
+}
+
+#features-grid {
+  text-align: center;
+  >div {
+    height: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid $blue-color;
+    border-radius: 20px;
+  }
+}
+
+.features-grid-hover {
+  background-color: $blue-color;
+  color: white;
+  text-align: left;
+}
+
+.screen-shoot {
+  width: 350px;
+}
+
+/* Review */
+#review {
+  padding: 30px;
+}
+
+div .reviewer-photo {
+  text-align: center;
+}
+
+.reviewer-photo {
+  margin-left: 70px;
+  width: 96px;
+  height: 96px;
+  border-radius: 64px;
+}
+
+.bold {
+  font-weight: bold;
+}
