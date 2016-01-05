@@ -1,11 +1,4 @@
 body {
-  background: #fafafa;
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot);
-  /* For IE6-8 */
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
   color: white;
 }
 
@@ -15,6 +8,7 @@ body {
 }
 
 .sign-in-button {
+  background-color: #0091ea !important;
   color: white;
 }
 
@@ -22,32 +16,26 @@ body {
   background: url("../images/bg.jpg") center/cover;
 }
 
-/* Main slide show */
-#main-slide {
-  margin: 70px 0;
+.link-on-hover:hover {
+  color: #0091ea;
+  font-weight: bold;
 }
 
-.slick-slide {
-  text-align: center;
-}
-
-.slick-prev:before {
-  position: absolute;
-  left: 100px;
-}
-
-.slick-next:before {
-  position: absolute;
-  right: 100px;
+/* Title */
+#main {
+  display: table;
 }
 
 #title {
-  padding-top: 100px;
+  height: 550px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /* Features */
 #features {
-  padding: 30px;
+  padding: 10px 30px 20px;
   color: #0091ea;
 }
 

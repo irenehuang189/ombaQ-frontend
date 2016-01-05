@@ -11,17 +11,6 @@ $(document).ready(function() {
     }
   });
 
-
-  // Main slide show
-  $('#main-slide').slick({
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear',
-    autoplay: true,
-    autoplaySpeed: 1000
-  });
-
   // Hide feature detail text
   $('.feature-detail').hide();
   $('#features-grid').children('div')

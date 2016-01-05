@@ -18,9 +18,9 @@
     <!-- build:css -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.css"/>
-    <link rel="stylesheet" href="styles/main.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.0.6/material.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="styles/main.css"/>
     <!-- endbuild -->
     
   </head>
@@ -55,8 +55,8 @@
         <div class="mdl-layout__header-row hide-on-scroll">
           <!-- Navigation -->
           <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="">FEATURES</a>
-            <a class="mdl-navigation__link" href="">REVIEW</a>
+            <a class="mdl-navigation__link link-on-hover" href="">FEATURES</a>
+            <a class="mdl-navigation__link link-on-hover" href="">REVIEW</a>
             <a class="mdl-navigation__link" href="">
               <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary mdl-js-ripple-effect sign-in-button">
                 SIGN IN
@@ -66,9 +66,15 @@
         </div>
       </header>
       <main class="mdl-layout__content">
+        <div class="mdl-grid" id="main">
+          <div class="mdl-cell mdl-cell--12-col" id="title">
+            <h2 class="bold">Your Social Media Command Center</h2>
+            <h5>Manage multiple social media accounts in one place, collaboratively</h5>
+          </div>
+        </div>
         <div class="content">
           <!-- Main slide -->
-          <div id="main-slide">
+          <!-- <div id="main-slide">
             <div class="middle-slide" id="title">
               <h2 class="bold">Your Social Media Command Center</h2>
               <h5>Manage multiple social media accounts in one place, collaboratively</h5>
@@ -79,7 +85,7 @@
                 Your browser does not support the video tag.
               </video>
             </div>
-          </div>
+          </div> -->
 
           <!-- Features part -->
           <div class="mdl-color--white" id="features">
@@ -87,7 +93,7 @@
             <div class="mdl-grid" id="features-grid">
               <div class="mdl-cell mdl-cell--4-col mdl-cell--1-col-phone" id="feature-01">
                 <img class="screen-shoot" src="images/feature01.png"/>
-                <h3 class="feature-name">SCHEDULE & PUBLISH</h3>
+                <h3 class="feature-name">SCHEDULE</h3>
                 <div class="feature-detail">
                   Arrange contents at once and you're done for the week.<br>
                   We'll publish them while you're busy on important stuff.
