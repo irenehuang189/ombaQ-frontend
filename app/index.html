@@ -18,7 +18,7 @@
     <!-- build:css -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.0.6/material.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" href="styles/main.css"/>
     <!-- endbuild -->
@@ -28,154 +28,212 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div class="demo-layout-waterfall demo-layout-transparent mdl-layout mdl-js-layout">
-      <header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--waterfall" id="header">
-        <!-- Header top row -->
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">
-            <img src="images/logo_header.png"/>
-          </span>
-          <div class="mdl-layout-spacer"></div>
-          <!-- Hidden, show on scroll -->
-          <span class="show-on-scroll">
-            <nav class="mdl-navigation">
-              <a class="mdl-navigation__link" href="">FEATURES</a>
-              <a class="mdl-navigation__link" href="">REVIEW</a>
-              <a class="mdl-navigation__link" href="">
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary mdl-js-ripple-effect sign-in-button">
-                  SIGN IN
-                </button>
-              </a>
-            </nav>
-          </span>
+    <div class="navbar-fixed">
+      <nav class="grey darken-4" role="navigation">
+        <div class="nav-wrapper container">
+          <a href="#!" class="brand-logo" id="logo-container"><img src="images/logo_header.png"/></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">REVIEWS</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">REVIEWS</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
         </div>
-        <!-- Header bottom row -->
-        <div class="mdl-layout__header-row hide-on-scroll">
-          <!-- Navigation -->
-          <nav class="mdl-navigation">
-            <a class="mdl-navigation__link link-on-hover" href="">FEATURES</a>
-            <a class="mdl-navigation__link link-on-hover" href="">REVIEW</a>
-            <a class="mdl-navigation__link" href="">
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary mdl-js-ripple-effect sign-in-button">
-                SIGN IN
-              </button>
-            </a>
-          </nav>
-        </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="mdl-grid" id="main">
-          <div class="mdl-cell mdl-cell--12-col" id="title">
-            <h2 class="bold">Your Social Media Command Center</h2>
-            <h5>Manage multiple social media accounts in one place, collaboratively</h5>
-          </div>
-        </div>
-        <div class="content">
-          <!-- Main slide -->
-          <!-- <div id="main-slide">
-            <div class="middle-slide" id="title">
-              <h2 class="bold">Your Social Media Command Center</h2>
-              <h5>Manage multiple social media accounts in one place, collaboratively</h5>
-            </div>
-            <div class="middle-slide">
-              <video controls>
-                <source src="images/video.mp4" type ="video/mp4"/>
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div> -->
+      </nav>
+    </div>
 
-          <!-- Features part -->
-          <div class="mdl-color--white" id="features">
-            <h2 class="bold">FEATURES</h2>
-            <div class="mdl-grid" id="features-grid">
-              <div class="mdl-cell mdl-cell--4-col mdl-cell--1-col-phone" id="feature-01">
-                <img class="screen-shoot" src="images/feature01.png"/>
-                <h3 class="feature-name">SCHEDULE</h3>
-                <div class="feature-detail">
-                  Arrange contents at once and you're done for the week.<br>
-                  We'll publish them while you're busy on important stuff.
-                </div>
-              </div>
-              <div class="mdl-cell mdl-cell--4-col mdl-cell--1-col-phone" id="feature-02">
-                <img class="screen-shoot" src="images/feature02.png"/>
-                <h3 class="feature-name">GET UPDATES</h3>
-                <div class="feature-detail">
-                  Observe multiple social media in one place.<br>
-                  See important updates in a glance, no more window switching.
-                </div>
-              </div>
-              <div class="mdl-cell mdl-cell--4-col mdl-cell--1-col-phone" id="feature-03">
-                <img class="screen-shoot" src="images/feature03.png"/>
-                <h3 class="feature-name">RESPOND</h3>
-                <div class="feature-detail">
-                  Make sure customer inquiries are handled by the right person.<br>
-                  We track their status, so you don't have to.
-                </div>
-              </div>
-            </div>
+    <div class="fullscreen-bg">
+      <video loop muted autoplay poster="images/videoframe.jpg" class="responsive-video fullscreen-bg__video">
+          <source src="video/video.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- Title -->
+    <div class="section no-pad-bot center valign-wrapper banner" id="index-banner">
+      <div class="container valign">
+        <div class="row" id="index-banner__title">
+          <h2 class="header">Your Social Media Command Center</h2>
+          <h5 class="header col s12 light">Manage multiple social media accounts in one place, collaboratively</h5>
+        </div>
+        <div class="row">
+          <a href="#features-banner" class="btn-large waves-effect waves-light white light-blue-text">LEARN MORE</a>
+          <a href="#" class="btn-large waves-effect waves-light light-blue" id="sign-up-button">SIGN UP</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="section no-pad-bot center valign-wrapper grey lighten-4 banner" id="features-banner">
+      <div class="container valign">
+        <h3 class="banner__blue-title">FEATURES</h3>
+        <div class="row black-text">
+          <div class="features-banner__header">
+            <h5>Schedule & Publish</h5>
           </div>
+          <div class="features-banner__detail">
+            Arrange contents at once and you're done for the week.<br/>
+            We'll publish them while you're busy on important stuff.
+          </div>
+        </div>
+        <div class="row center">
+          <img class="responsive-img" id="carousel-frame" src="images/carousel-frame.png"/>
         </div>
 
-        <!-- Review -->
-        <div class="mdl-color--blue" id="review">
-          <h2 class="bold">REVIEW</h2>
-          <section class="section--footer mdl-grid">
-            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-              <div class="section__circle-container__circle mdl-color--accent section__circle--big reviewer-photo"></div>
+        <!-- Carousel -->
+        <div class="carousel">
+          <a class="carousel-item" href="#one!">
+            <div class="caption center-align black-text">
+              <div class="features-banner__header">
+                <h5>Schedule & Publish</h5>
+              </div>
+              <div class="row features-banner__detail">
+                Arrange contents at once and you're done for the week.<br/>
+                We'll publish them while you're busy on important stuff.
+              </div>
             </div>
-            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
+            <img src="images/feature01.png">
+          </a>
+          <a class="carousel-item" href="#two!">
+            <div class="caption center-align black-text">
+              <div class="features-banner__header">
+                <h5>Get Updates</h5>
+              </div>
+              <div class="row features-banner__detail">
+                Observe multiple social media in one place.<br/>
+                See important updates in a glance, no more window switching.
+              </div>
             </div>
-            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-              <div class="section__circle-container__circle mdl-color--accent section__circle--big reviewer-photo"></div>
+            <img src="images/feature02.png">
+          </a>
+          <a class="carousel-item" href="#three!">
+            <div class="caption center-align black-text">
+              <div class="features-banner__header">
+                <h5>Respond</h5>
+              </div>
+              <div class="row features-banner__detail">
+                Make sure customer inquiries are handled by the right person.<br/>
+                We track their status, so you don't have to.
+              </div>
             </div>
-            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-            </div>
-          </section>
-          <section class="section--footer mdl-grid">
-            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-              <div class="section__circle-container__circle mdl-color--accent section__circle--big reviewer-photo"></div>
-            </div>
-            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-            </div>
-            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-              <div class="section__circle-container__circle mdl-color--accent section__circle--big reviewer-photo"></div>
-            </div>
-            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-            </div>
-          </section>
+            <img src="images/feature03.png">
+          </a>
         </div>
+      </div>
+    </div>
 
-        <!-- Footer -->
-        <footer class="mdl-mini-footer">
-          <div class="mdl-mini-footer__left-section">
-            <div class="mdl-logo">
-              <img src="images/logo_footer.png"/>
+    <!-- Reviews -->
+    <div class="section no-pad-bot valign-wrapper light-blue banner" id="reviews-banner">
+      <div class="container valign">
+        <h3 class="center banner__white-title">WHAT DO THEY THINK?</h3>
+        <div class="black-text">
+          <div class="row">
+            <div class="col l1">
+              <img class="circle responsive-img" src="images/review-photo.jpg"/>
             </div>
-            <ul class="mdl-mini-footer__link-list">
-              <li><a href="">Blog</a></li>
-              <li><a href="">Contact Us</a></li>
-              <li><a href="">Support</a></li>
-              <li><a href="">Privacy Policy</a></li>
-            </ul>
-            © Copyright 2015 ombaQ, All Rights Reserved
+            <div class="col l4 left-align">
+              <div class="reviews-banner__name">Julia Jacobs</div>
+              <div class="reviews-banner__job">Designer</div>
+              <blockquote class="reviews-banner__review">
+                The best app I have ever known! So many features that I have not found on the other site.
+              </blockquote>
+            </div>
+            <div class="col l1 offset-l2">
+              <img class="circle responsive-img" src="images/review-photo.jpg"/>
+            </div>
+            <div class="col l4 left-align">
+              <div class="reviews-banner__name">Julia Jacobs</div>
+              <div class="reviews-banner__job">Designer</div>
+              <blockquote class="reviews-banner__review">
+                The best app I have ever known! So many features that I have not found on the other site.
+              </blockquote>
+            </div>
           </div>
-          <div class="mdl-mini-footer__right-section">
-            <button class="mdl-mini-footer__social-btn">f</button>
-            <button class="mdl-mini-footer__social-btn">t</button>
+          <div class="row">
+            <div class="col l1">
+              <img class="circle responsive-img" src="images/review-photo.jpg"/>
+            </div>
+            <div class="col l4 left-align">
+              <div class="reviews-banner__name">Julia Jacobs</div>
+              <div class="reviews-banner__job">Designer</div>
+              <blockquote class="reviews-banner__review">
+                The best app I have ever known! So many features that I have not found on the other site.
+              </blockquote>
+            </div>
+            <div class="col l1 offset-l2">
+              <img class="circle responsive-img" src="images/review-photo.jpg"/>
+            </div>
+            <div class="col l4 left-align">
+              <div class="reviews-banner__name">Julia Jacobs</div>
+              <div class="reviews-banner__job">Designer</div>
+              <blockquote class="reviews-banner__review">
+                The best app I have ever known! So many features that I have not found on the other site.
+              </blockquote>
+            </div>
           </div>
-        </footer>
-      </main>
+          <div class="row">
+            <div class="col l1">
+              <img class="circle responsive-img" src="images/review-photo.jpg"/>
+            </div>
+            <div class="col l4 left-align">
+              <div class="reviews-banner__name">Julia Jacobs</div>
+              <div class="reviews-banner__job">Designer</div>
+              <blockquote class="reviews-banner__review">
+                The best app I have ever known! So many features that I have not found on the other site.
+              </blockquote>
+            </div>
+            <div class="col l1 offset-l2">
+              <img class="circle responsive-img" src="images/review-photo.jpg"/>
+            </div>
+            <div class="col l4 left-align">
+              <div class="reviews-banner__name">Julia Jacobs</div>
+              <div class="reviews-banner__job">Designer</div>
+              <blockquote class="reviews-banner__review">
+                The best app I have ever known! So many features that I have not found on the other site.
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog -->
+    <div class="section no-pad-bot valign-wrapper grey lighten-4 banner" id="blog-banner">
+      <div class="container valign">
+        <h3 class="center banner__blue-title">LATEST BLOG POST & NEWS</h3>
+        <div class="black-text">
+          <div class="row">
+            <div class="col s12 m6 l4">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="images/bg.jpg">
+                  <span class="card-title">Social Media and Me</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+              </div>
+              <div class="card small">
+                <div class="card-image">
+                  <img src="images/bg.jpg">
+                  <span class="card-title">Social Media and Me</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -195,7 +253,7 @@
     
     <!-- build:js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.0.6/material.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->

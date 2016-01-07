@@ -1,86 +1,102 @@
 // bower:scss
 // endbower
 
-$blue-color: #0091ea;
+$primary-color: #03a9f4;
+$secondary-color: #f5f5f5;
 
 body {
   color: white;
 }
 
-/* Header */
-#header {
-  border-bottom: #fff solid 1px;
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
 }
 
-.sign-in-button {
-  background-color: $blue-color !important;
-  color: white;
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.demo-layout-transparent {
-  background: url('../images/bg.jpg') center / cover;
-}
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('../images/videoframe.jpg') center center / cover no-repeat;
+  }
 
-.link-on-hover:hover {
-  color: $blue-color;
-  font-weight: bold;
-}
-
-/* Title */
-#main {
-  display: table;
-}
-
-#title {
-  height: 550px;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-/* Features */
-#features {
-  padding: 10px 30px 20px;
-  color: $blue-color;
-}
-
-#features-grid {
-  text-align: center;
-  >div {
-    height: 300px;
-    margin: auto;
-    padding: 20px;
-    border: 2px solid $blue-color;
-    border-radius: 20px;
+  .fullscreen-bg__video {
+    display: none;
   }
 }
 
-.features-grid-hover {
-  background-color: $blue-color;
-  color: white;
-  text-align: left;
+.banner {
+  height: 700px;
+  overflow: hidden;
 }
 
-.screen-shoot {
-  width: 350px;
+.banner__white-title {
+  color: $secondary-color;
+  padding-bottom: 10px;
+  border-bottom: solid $secondary-color 2px;
 }
 
-/* Review */
-#review {
-  padding: 30px;
+.banner__blue-title {
+  color: $primary-color;
+  padding-bottom: 10px;
+  border-bottom: solid $primary-color 2px;
 }
 
-div .reviewer-photo {
-  text-align: center;
+#index-banner {
+  background-color: rgba(0,0,0,0.4);
+  padding-bottom: 150px;
 }
 
-.reviewer-photo {
-  margin-left: 70px;
-  width: 96px;
-  height: 96px;
-  border-radius: 64px;
+#sign-up-button {
+  margin-left: 5%;
 }
 
-.bold {
+#carousel-frame {
+  position: absolute;
+  z-index: 1;
+}
+
+#features-banner {
+}
+
+.features-banner__header {
   font-weight: bold;
+}
+
+.features-banner__detail {
+
+}
+
+.reviews-banner__name {
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.reviews-banner__job {
+  
+}
+
+.reviews-banner__review {
+  font-style: italic;
+}
+
+.small {
+  height: 220px !important;
+}
+
+blockquote {
+  margin: 20px 0;
+  padding-left: 1.5rem;
+  border-left: 5px solid $secondary-color;
 }

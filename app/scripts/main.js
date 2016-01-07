@@ -1,26 +1,33 @@
-$(document).ready(function() {
-  // Header minimize on scroll
-  $('.show-on-scroll').hide();
-  $(window).scroll(function() {
-    if ($(this).scrollTop()<0) {
-      console.log('down');
-      $('.show-on-scroll').fadeOut();
-    } else {
-      console.log('up');
-      $('.show-on-scroll').fadeIn();
-    }
-  });
+$(document).ready(function(){
 
-  // Hide feature detail text
-  $('.feature-detail').hide();
-  $('#features-grid').children('div')
-    .hover(function(){
-        $(this).addClass('features-grid-hover'),
-        $(this).find('.screen-shoot').animate({ height: 'toggle', opacity: 'toggle' }, 'slow'),
-        $(this).find('.feature-detail').fadeIn('slow');
-      }, function() {
-        $(this).removeClass('features-grid-hover'),
-        $(this).find('.screen-shoot').animate({ height: 'toggle', opacity: 'toggle' }, 'slow'),
-        $(this).find('.feature-detail').fadeOut('slow');
-      });
+$('.carousel-tes').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear',
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+  
+
+  $('.carousel').carousel();
 });
